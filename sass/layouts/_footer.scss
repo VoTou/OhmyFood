@@ -1,0 +1,23 @@
+footer {
+    color: #FFF;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    background-color: $footer-color;
+    p {
+        font-size: 1.1rem;
+        font-family: shrikhand, sans-serif;
+        margin-bottom: 1.3rem;
+    }
+    i {
+        font-size: 0.9rem;
+        padding-right: 0.8rem;
+        vertical-align: middle;
+    }
+    li {
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+    }
+}
+#footer__icon__hand {
+    font-size: 0.62rem;
+}
+
