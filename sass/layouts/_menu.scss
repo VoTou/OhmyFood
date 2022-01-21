@@ -1,0 +1,94 @@
+.header__photo {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.main__menu {
+    background-color: $background-color;
+}
+
+.menu {
+    background-color: $background-color;
+    border-radius: 38px 38px 0 0;
+    position: relative;
+    top: -35px;
+    padding: 1.8rem 1rem 3rem 0.9rem;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        h1 {
+            font-size: 1.8rem;
+            padding-left: 0.2rem;
+            padding-bottom: 1.7rem;
+        }
+        .icon__hearth {
+            align-self: flex-start;
+            font-size: 1.5rem;
+            padding-top: 0.5rem;
+            padding-right: 1rem;
+            color: #969696;
+        }
+    }
+    &__mosaic {
+        margin-bottom: 3rem;
+
+       h2 {
+           text-transform: uppercase;
+           margin-bottom: 1.1rem;
+            &::after {
+                background-color: $color-tertiary;
+                display: block;
+                margin-top: 0.4rem;
+                content: "";
+                height: 3px;
+                width: 2.5em;
+            }
+        } 
+    
+        &__card {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: $background-color-menu-card;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            box-shadow: $box-shadow;
+            h3 {
+                font-size: 1.12rem;
+                font-weight: 700;
+                padding: 0.7rem 3.5rem 0.25rem 0.7rem;
+                width: 100%;
+                order: 1;
+            }
+            p:nth-of-type(1) {
+                font-size: 0.96rem;
+                font-weight: 300;
+                padding: 0 0 0.7rem 0.7rem;
+                order: 2;
+            }
+            &__price {
+                margin-left: auto;
+                font-weight: 700;
+                padding: 0 1.5rem 0rem 0;
+                order: 3;
+            }
+        }
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        button {
+            background: linear-gradient($color-secondary, $color-primary);
+            color: #FFF;
+            font-weight: 400;
+            font-size: 1rem;
+            padding: 1em 3em;
+            border-radius: 50px;
+            border: 0;
+            box-shadow: $box-shadow;
+        }
+    }    
+}
+
