@@ -1,12 +1,19 @@
-header {
+.header__main {
     display: flex;
     justify-content: center;
     padding: 23px 0 12px 0;
+    img {
+        width: auto;
+        height: 28px;
+    }
+    i {
+        position: relative;
+        left: -75px;
+        bottom: -2px;
+        font-size: 1.25rem;
+        color: #353535;
+    }
 }
 
-header img {
-    width: auto;
-    height: 28px;
-}
 
 
