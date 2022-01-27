@@ -24,13 +24,6 @@
             padding-left: 0.2rem;
             padding-bottom: 1.7rem;
         }
-        .icon__hearth {
-            align-self: flex-start;
-            font-size: 1.5rem;
-            padding-top: 0.5rem;
-            padding-right: 1rem;
-            color: #969696;
-        }
     }
     &__mosaic {
         margin-bottom: 3rem;
@@ -55,6 +48,25 @@
             border-radius: 15px;
             margin-bottom: 1rem;
             box-shadow: $box-shadow;
+            animation: slideUp $anim-dur both ease-out;
+            @for $i from 1 through $num-cards {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+            }
+            }
+            @keyframes slideUp {
+                0% {
+                    transform: translateY(25px);
+                    opacity: 0;
+                    
+                }
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            
+        
             h3 {
                 font-size: 1.12rem;
                 font-weight: 700;

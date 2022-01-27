@@ -1,8 +1,14 @@
+// Color + BG + box-shadow //
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $footer-color: #353535;
 $background-color: #F6F6F6;
 $background-color-menu-card: #fff;
-$box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.1);
 $color-icon-hearth: #969696;
+$box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.1);
+
+// Animation //
+$anim-dur: 0.7s;
+$num-cards: 10;
+$anim-delay: $anim-dur / $num-cards;
