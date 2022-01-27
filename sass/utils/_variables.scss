@@ -11,4 +11,11 @@ $box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.1);
 // Animation //
 $anim-dur: 0.7s;
 $num-cards: 10;
-$anim-delay: $anim-dur / $num-cards;
+$anim-delay: calc($anim-dur / $num-cards);
+
+// Breakpoints //
+
+$breakpoints: (
+    mobile: 600px,
+    tablette: 800px
+);
