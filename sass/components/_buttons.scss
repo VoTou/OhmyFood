@@ -1,0 +1,92 @@
+.presentation__btn {
+  position: relative;
+  z-index: 2;
+  background: $linear-gradient;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1em 1.5em;
+  border-radius: 50px;
+  border: 0;
+  box-shadow: $box-shadow;
+  cursor: pointer;
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+  &::after {
+    content: "";
+    border-radius: 50px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background: linear-gradient(
+      lighten($color-secondary, 3),
+      lighten($color-primary, 3)
+    );
+    box-shadow: $box-shadow-value opacify($box-shadow-color, 0.1);
+    transition: opacity 400ms ease-in-out;
+  }
+}
+
+.icon__hearth__menu {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  color: #969696;
+}
+
+.icon__hearth__accueil {
+  font-size: 1.5rem;
+  color: $color-icon-hearth;
+  padding-top: 0.2rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.menu__btn {
+  display: flex;
+  justify-content: center;
+  &__commander {
+    position: relative;
+    z-index: 2;
+    background: $linear-gradient;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 1em 3em;
+    border-radius: 50px;
+    border: 0;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+    &::after {
+      content: "";
+      border-radius: 50px;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      background: linear-gradient(
+        lighten($color-secondary, 3),
+        lighten($color-primary, 3)
+      );
+      box-shadow: $box-shadow-value opacify($box-shadow-color, 0.1);
+      transition: opacity 400ms ease-in-out;
+    }
+  }
+}
