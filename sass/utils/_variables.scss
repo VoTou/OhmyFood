@@ -6,7 +6,10 @@ $footer-color: #353535;
 $background-color: #F6F6F6;
 $background-color-menu-card: #fff;
 $color-icon-hearth: #969696;
-$box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.1);
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+$box-shadow-value: 0px 5px 8px 1px;
+$box-shadow: $box-shadow-value $box-shadow-color;
+$linear-gradient: linear-gradient($color-secondary, $color-primary);
 
 // Animation //
 $anim-dur: 0.7s;
