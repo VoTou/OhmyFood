@@ -1,165 +1,140 @@
+
+
 .localisation {
-    display: flex;
-    justify-content: center;
-    background-color: #EAEAEA;
-    padding: 0.95rem 0;
-    box-shadow: inset 0 3px 3px rgba($color: #000000, $alpha: 0.1);
-}
-
-.localisation i {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  padding: 0.95rem 0;
+  box-shadow: inset 0 3px 3px rgba($color: #000000, $alpha: 0.1);
+  i {
     padding-right: 1.1rem;
-}
-
-.localisation p {
+  }
+  p {
     font-weight: 500;
     padding-right: 1.6rem;
+  }
 }
 
 .presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    background-color: $background-color;
-    padding-bottom: 3.5rem;
-    &_btn {
-        background: linear-gradient($color-secondary, $color-primary);
-        color: #FFF;
-        font-weight: 400;
-        font-size: 1rem;
-        padding: 1em 1.5em;
-        border-radius: 50px;
-        border: 0;
-        box-shadow: $box-shadow;
-    }
-}
-
-.presentation h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: $background-color;
+  padding-bottom: 3.5rem;
+  h1 {
     font-weight: 700;
     font-size: 1.5rem;
     padding: 2.05rem 3rem 0.7rem 3rem;
-}
-
-.presentation h2 {
+  }
+  h2 {
     font-size: 1.1rem;
     padding: 0 1rem 1.8rem 1rem;
     font-weight: 300;
+  }
 }
-
 
 .fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.3rem 3rem 1.5rem;
+  h2 {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1.2em;
+  }
+  &__card {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    padding: 3rem 1.3rem 3rem 1.5rem;
-    h2 {
-        align-self: flex-start;
-        font-size: 1.5rem;
-        font-weight: 700;
-        padding-bottom: 1.2em;
+    background-color: $background-color;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 1.3rem;
+    padding: 1.5em 0;
+    box-shadow: $box-shadow;
+    h3 {
+      font-weight: 700;
     }
-    &__card {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        background-color: $background-color;
-        width: 100%;
-        border-radius: 20px;
-        margin-bottom: 1.3rem;
-        padding: 1.5em 0;
-        box-shadow: $box-shadow;
-        h3 {
-            font-weight: 700;
-        }
-        &__degustez {
-            background-color: #F5EDFF;
-        }
-        &__number {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #FFF;
-            background-color: $color-primary;
-            border-radius: 50%;
-            font-size: 0.9rem;
-            height: 1.5rem;
-            width: 1.5rem;
-            margin-left: -1em;
-        }
-        &__icon {
-            font-size: 1.3rem;
-            padding: 0 1.5rem ;
-            color: #8D8D8D;
-            &__degustez {
-                font-size: 1.2rem;
-                color: $color-primary;
-            }  
-        }
+    &__degustez {
+      background-color: #f5edff;
     }
+    &__number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-color: $color-primary;
+      border-radius: 50%;
+      font-size: 0.9rem;
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-left: -1em;
+    }
+    &__icon {
+      font-size: 1.3rem;
+      padding: 0 1.5rem;
+      color: #8d8d8d;
+      &__degustez {
+        font-size: 1.2rem;
+        color: $color-primary;
+      }
+    }
+  }
 }
 
-
-
 .restaurants {
-    display: flex;
-    flex-direction: column;
-    background-color: $background-color;
-    padding: 3.1rem 1.4rem 2.5rem 1.4rem;
-    &__title {
-        font-size: 1.5rem;
-        font-weight: 700;
-        padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  padding: 3.1rem 1.4rem 2.5rem 1.4rem;
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+  }
+  &__card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 1.2rem;
+    box-shadow: $box-shadow;
+    &__new {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      border-radius: 2px;
+      color: #008766;
+      background-color: $color-tertiary;
+      padding: 0.35rem 0.6rem;
+      font-weight: 500;
+      font-size: 0.85rem;
     }
-    &__card {
-        position: relative;
-        background-color: #fff;
-        border-radius: 20px;
-        width: 100%;
-        margin-bottom: 1.2rem;
-        box-shadow: $box-shadow;
-        &__new {
-            position: absolute;
-            top: 12px;
-            right: 12px;
-            border-radius: 2px;
-            color: #008766;
-            background-color: $color-tertiary;
-            padding: 0.35rem 0.6rem;
-            font-weight: 500;
-            font-size: 0.85rem;
-        }
-        &__photo {
-            object-fit: cover;
-            object-position: 50% 60%;
-            border-radius: 20px 20px 0 0;
-            height: 175px;
-            width: 100%;
-        }
-        &__description {
-            display: flex;
-            justify-content: space-between;
-            padding: 0.9rem 1.5rem 1rem 1rem;
-            h3 {
-                font-size: 1.1rem;
-                font-weight: 800;
-                padding-bottom: 0.2rem;
-            }
-            h4 {
-                font-weight: 300;
-                font-size: 1.05rem;
-            }
-            i {
-                font-size: 1.5rem;
-                color: $color-icon-hearth;
-                padding-top: 0.2rem;
-            }
-        }
+    &__photo {
+      object-fit: cover;
+      object-position: 50% 60%;
+      border-radius: 20px 20px 0 0;
+      height: 175px;
+      width: 100%;
     }
+    &__description {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.9rem 1.5rem 1rem 1rem;
+      h3 {
+        font-size: 1.1rem;
+        font-weight: 800;
+        padding-bottom: 0.2rem;
+      }
+      h4 {
+        font-weight: 300;
+        font-size: 1.05rem;
+      }
     }
-
-
-
-
-
+  }
+}

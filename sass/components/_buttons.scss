@@ -1,6 +1,6 @@
 .presentation__btn {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   background: $linear-gradient;
   color: #fff;
   font-weight: 400;
@@ -26,11 +26,11 @@
     left: 0;
     opacity: 0;
     background: linear-gradient(
-      lighten($color-secondary, 3),
-      lighten($color-primary, 3)
+      lighten($color-secondary, 4),
+      lighten($color-primary, 4)
     );
     box-shadow: $box-shadow-value opacify($box-shadow-color, 0.1);
-    transition: opacity 400ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
   }
 }
 
@@ -39,7 +39,7 @@
   font-size: 1.5rem;
   padding-top: 0.5rem;
   padding-right: 1rem;
-  color: #969696;
+  color: $color-icon-hearth;
 }
 
 .icon__hearth__accueil {
@@ -82,8 +82,8 @@
       left: 0;
       opacity: 0;
       background: linear-gradient(
-        lighten($color-secondary, 3),
-        lighten($color-primary, 3)
+        lighten($color-secondary, 4),
+        lighten($color-primary, 4)
       );
       box-shadow: $box-shadow-value opacify($box-shadow-color, 0.1);
       transition: opacity 400ms ease-in-out;
