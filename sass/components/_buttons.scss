@@ -43,12 +43,21 @@
 }
 
 .icon__hearth__accueil {
+  position: relative;
   font-size: 1.5rem;
   color: $color-icon-hearth;
   padding-top: 0.2rem;
   &:hover {
     cursor: pointer;
   }
+}
+
+.icon__hearth_full {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 0;
+  z-index: 3;
+  background: $linear-gradient;
 }
 
 .menu__btn {
