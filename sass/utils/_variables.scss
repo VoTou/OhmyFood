@@ -12,7 +12,7 @@ $box-shadow: $box-shadow-value $box-shadow-color;
 $linear-gradient: linear-gradient($color-secondary, $color-primary);
 
 // Animation //
-$anim-dur: 0.7s;
+$anim-dur: 0.75s;
 $num-cards: 10;
 $anim-delay: calc($anim-dur / $num-cards);
 
@@ -20,5 +20,6 @@ $anim-delay: calc($anim-dur / $num-cards);
 
 $breakpoints: (
     mobile: 600px,
-    tablette: 800px
+    tablette: 800px,
+    desktop: 1200px
 );
