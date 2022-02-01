@@ -10,6 +10,7 @@ $box-shadow-color: rgba(0, 0, 0, 0.1);
 $box-shadow-value: 0px 5px 8px 1px;
 $box-shadow: $box-shadow-value $box-shadow-color;
 $linear-gradient: linear-gradient($color-secondary, $color-primary);
+$lighten-button-value: 7;
 
 // Animation //
 $anim-dur: 0.75s;
