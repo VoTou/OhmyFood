@@ -26,38 +26,50 @@
     left: 0;
     opacity: 0;
     background: linear-gradient(
-      lighten($color-secondary, 4),
-      lighten($color-primary, 4)
+      lighten($color-secondary, $lighten-button-value),
+      lighten($color-primary, $lighten-button-value)
     );
     box-shadow: $box-shadow-value opacify($box-shadow-color, 0.1);
     transition: opacity 300ms ease-in-out;
   }
 }
 
-.icon__hearth__menu {
-  align-self: flex-start;
-  font-size: 1.5rem;
-  padding-top: 0.5rem;
-  padding-right: 1rem;
-  color: $color-icon-hearth;
-}
-
-.icon__hearth__accueil {
+.icon__hearth{
   position: relative;
   font-size: 1.5rem;
   color: $color-icon-hearth;
-  padding-top: 0.2rem;
+  opacity: 1;
+  
+  &__menu {
+    display: flex;
+    align-self: flex-start;
+    padding-top: 0.6rem;
+    &:hover {
+      cursor: pointer;
+    }
+}
+&__accueil {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0.20rem;
   &:hover {
     cursor: pointer;
   }
 }
-
-.icon__hearth_full {
+&__add {
+  opacity: 0;
+  font-size: 1.6rem;
   position: absolute;
-  font-size: 1.5rem;
-  right: 0;
-  z-index: 3;
   background: $linear-gradient;
+background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+transition: opacity 250ms ease-in;
+  &:hover {
+    opacity: 1;
+  }
+}
 }
 
 .menu__btn {
@@ -91,11 +103,11 @@
       left: 0;
       opacity: 0;
       background: linear-gradient(
-        lighten($color-secondary, 4),
-        lighten($color-primary, 4)
+        lighten($color-secondary, $lighten-button-value),
+        lighten($color-primary, $lighten-button-value)
       );
       box-shadow: $box-shadow-value opacify($box-shadow-color, 0.1);
-      transition: opacity 400ms ease-in-out;
+      transition: opacity 300ms ease-in-out;
     }
   }
 }
