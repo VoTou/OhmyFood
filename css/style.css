@@ -505,10 +505,20 @@ a {
   font-size: 1.5rem;
   padding: 2.05rem 3rem 0.7rem 3rem;
 }
+@media screen and (min-width: 800px) {
+  .presentation h1 {
+    font-size: 1.7rem;
+  }
+}
 .presentation h2 {
   font-size: 1.1rem;
   padding: 0 1rem 1.8rem 1rem;
   font-weight: 300;
+}
+@media screen and (min-width: 800px) {
+  .presentation h2 {
+    font-size: 1.3rem;
+  }
 }
 
 .fonctionnement {

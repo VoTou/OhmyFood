@@ -1,5 +1,3 @@
-
-
 .localisation {
   display: flex;
   justify-content: center;
@@ -28,11 +26,17 @@
     font-weight: 700;
     font-size: 1.5rem;
     padding: 2.05rem 3rem 0.7rem 3rem;
+    @include tablette {
+      font-size: 1.7rem;
+    }
   }
   h2 {
     font-size: 1.1rem;
     padding: 0 1rem 1.8rem 1rem;
     font-weight: 300;
+    @include tablette {
+      font-size: 1.3rem;
+    }
   }
 }
 
