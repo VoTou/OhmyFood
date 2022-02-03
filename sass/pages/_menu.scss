@@ -73,7 +73,7 @@
         &__select {
         margin-right: 0;
         &__icon {
-          transform: rotate(0deg);
+          animation: rotate 0.5s both ease-out;
         }
       }
       @for $i from 1 through $num-cards {
@@ -111,9 +111,14 @@
         &__icon {
           color: white;
           font-size: 1.6rem;
-          transform: rotate(-360deg);
-          transition: 0.5s ease-in;
-        }
+          @keyframes rotate {
+            0% {
+              transform: rotate(-720deg);
+            }
+            100% {
+              transform: rotate(0);
+            }
+        }}
       }
 
       &__text {
