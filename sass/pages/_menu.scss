@@ -48,6 +48,9 @@
     h2 {
       text-transform: uppercase;
       margin-bottom: 1.1rem;
+      @include tablette {
+        font-size: 1.2rem;
+      }
       &::after {
         background-color: $color-tertiary;
         display: block;
