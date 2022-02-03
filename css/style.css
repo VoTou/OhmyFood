@@ -344,6 +344,11 @@ a {
   text-transform: uppercase;
   margin-bottom: 1.1rem;
 }
+@media screen and (min-width: 800px) {
+  .menu__mosaic h2 {
+    font-size: 1.2rem;
+  }
+}
 .menu__mosaic h2::after {
   background-color: #99E2D0;
   display: block;
