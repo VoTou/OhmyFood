@@ -143,7 +143,7 @@ th {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform-origin: bottom;
-  transition: opacity 250ms ease-out;
+  transition: opacity 600ms ease-out;
 }
 .icon__hearth__add:hover {
   opacity: 1;
@@ -528,6 +528,8 @@ a {
   display: flex;
   flex-direction: column;
   padding-left: 0.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 800px) {
   .fonctionnement__mosaic {
@@ -537,6 +539,8 @@ a {
 }
 .fonctionnement h2 {
   align-self: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
   font-size: 1.5rem;
   font-weight: 700;
   padding-bottom: 1.2em;
@@ -587,6 +591,8 @@ a {
 .restaurants__mosaic {
   display: flex;
   flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
   row-gap: 1rem;
 }
 @media screen and (min-width: 600px) {
@@ -597,6 +603,8 @@ a {
   }
 }
 .restaurants__title {
+  max-width: 1400px;
+  margin: 0 auto;
   font-size: 1.5rem;
   font-weight: 700;
   padding-bottom: 1.5rem;
